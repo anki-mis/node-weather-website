@@ -1,5 +1,8 @@
 //console.log('Client side javascript file is loaded');
 
+/*
+-- commenting out below 2 hardcoded fetch blocks that use localhost:3000
+------------------------------------------------------------------------
 fetch('https://puzzle.mead.io/puzzle').then((response) => {
     response.json().then((data) => {
         console.log(data);
@@ -15,6 +18,8 @@ fetch('http://localhost:3000/weather?address=Boston').then((response) => {
         console.log(data);
     });
 });
+-------------------------------------------------------------------------
+*/
 
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
