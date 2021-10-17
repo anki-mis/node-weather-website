@@ -22,7 +22,8 @@ const weatherinfo = (lat, lon, weather_callback) => {
         }
         else
         {
-            weather_callback(undefined, response.body.current.temperature);
+            //console.log(response.body.current);
+            weather_callback(undefined, response.body.current);
         }   
         
         

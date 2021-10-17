@@ -70,7 +70,7 @@ app.get('/weather', (req,res) => {
                     //console.log('Current temperature at '+ geodata.location +' is ' + weather_data);
                     return res.send({
                         address: req.query.address,
-                        forecast: 'Current temperature at '+ geodata.location +' is ' + weather_data + ' degrees celcius',
+                        forecast: 'Current temperature at '+ geodata.location +' is ' + weather_data.temperature + ' degrees celcius and humidity is ' + weather_data.humidity + '.',
                         location: geodata.location + ' - it is coming from response and should match with that coming from request that is address'
                     });
                 }        
